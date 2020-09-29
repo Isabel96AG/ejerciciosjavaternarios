@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio6 ternario</title>
+</head>
+
+<body>
+
+    <script>
+        let nota1 = parseInt(window.prompt("Escribe nota examen1"));
+        let nota2 = parseInt(window.prompt("Escribe nota examen 2"));
+        let nota3 = parseInt(window.prompt("Escribe nota examen tres"));
+        let suma;
+
+        if (nota1 > nota2) {
+            suma = nota1 + nota3;
+        } else {
+            suma = nota2 + nota3;
+
+
+
+
+        }
+        if (suma < 5) {
+            console.log(`La nota es ${suma}Suspendido`);
+        } else if (suma < 6) {
+            console.log(`La nota es ${suma} Suficiente`);
+        } else if (suma < 7) {
+            console.log(`La nota es ${suma} Bien`);
+        } else if (suma < 9) {
+            console.log(`La nota es ${suma} Notable`);
+
+        } else if (suma < 10) {
+            console.log(`La nota es ${suma} sobresaliente`);
+        } else {
+            console.log(`La nota es ${suma} Matricula de Honor`);
+
+        }
+    </script>
+</body>
+
+</html>
